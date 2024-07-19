@@ -1,0 +1,15 @@
+
+Krishna Industries
+1. CRM ---Customer  adding , Marketing peoples speak based on the languages they know, states will be allocated accordingly.
+2. Sale
+3.Purchase
+4. Report of sales everyday with sale and profit 
+5. Graph with purchase and sale details , while clicking it should needs to go with the list of peoples on district wise
+6. integration with india mart, justdial , leads from india mart will be shared to specific area location peoples like kerala, TN etc....
+7. Enquiry chart with product wise and district wise.
+
+Login access
+
+super admin
+Accoutant
+Employee
