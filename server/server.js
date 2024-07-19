@@ -45,7 +45,7 @@ const storageExcel = multer.diskStorage({
 });
 
 const upload = multer({ storage: storage });
-// const uploadExcel = multer({storage: storageExcel});
+const uploadExcel = multer({storage: storageExcel});
 
 
 const db = mysql.createPool({
@@ -102,7 +102,7 @@ app.use('/cust_purch',customerPurchaseController);
 const empAttendanceController = require('./controllers/empAttendanceController')(db);
 app.use('/emp_attend',empAttendanceController);
 
-const uploadExcelController = require('./controllers/uploadExcelController')(db);
+const uploadExcelController = require('./controllers/uploadExcelController')(db,uploadExcel);
 app.use('/upload',uploadExcelController);
 
 app.listen(port,()=>{
