@@ -4,6 +4,7 @@ import { lazy } from 'react';
 import MainLayout from 'layout/MainLayout';
 import Loadable from 'ui-component/Loadable';
 import { element } from 'prop-types';
+import AddPurchaseForm from 'components/Admin Panel/Purchase/AddPurchaseForm';
 // import UploadExcel from 'components/Admin Panel/Purchase/UploadExcell';
 
 const Login = Loadable(lazy(() => import('views/pages/authentication3/Login')));
@@ -20,7 +21,8 @@ const SpecificationIndex = Loadable(lazy(() => import('components/Admin Panel/Pr
 const SalesIndex = Loadable(lazy(() => import('components/Admin Panel/Sales/SalesIndex')));
 const AdminCustomerIndex = Loadable(lazy(() => import('components/Admin Panel/Customer/AdminCustomerIndex')));
 const AdminCustPurchIndex = Loadable(lazy(() => import('components/Admin Panel/Admin Customer Purchase/AdminCustPurchIndex')));
-const UploadExcel = Loadable(lazy(() => import('components/Admin Panel/Purchase/UploadExcell')))
+const UploadExcel = Loadable(lazy(() => import('components/Admin Panel/Purchase/UploadExcell')));
+// const AddPurchaseForm = Loadable(lazy(() =>('components/Admin Panel/Purchase/AddPurchaseForm')));
 
 // Employee
 const EmpLeadsIndex = Loadable(lazy(() => import('components/Employee Panel/Employee Leads/EmpLeadsIndex')));
@@ -71,6 +73,14 @@ const MainRoutes = sessionStorage.getItem("adminLoggedIn") ? {
     {
       path: 'purchIndex',
       element: <PurchaseIndex />
+    },
+    // {
+    //   path:'uploadExcell',
+    //   element:<UploadExcel/>
+    // },
+    {
+      path:'addpurchase',
+      element:<AddPurchaseForm/>
     },
     {
       path: 'proIndex',
@@ -142,10 +152,7 @@ const MainRoutes = sessionStorage.getItem("adminLoggedIn") ? {
       path: 'custPurchIndex',
       element: <CustPurchIndex />
     },
-    {
-      path:'uploadExcell',
-      element:<UploadExcel/>
-    }
+  
   ]
 } : {
   path: '/',

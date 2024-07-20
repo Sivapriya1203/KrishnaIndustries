@@ -102,8 +102,8 @@ app.use('/cust_purch',customerPurchaseController);
 const empAttendanceController = require('./controllers/empAttendanceController')(db);
 app.use('/emp_attend',empAttendanceController);
 
-const uploadExcelController = require('./controllers/uploadExcelController')(db,uploadExcel);
-app.use('/upload',uploadExcelController);
+// const uploadExcelController = require('./controllers/uploadExcelController')(db,uploadExcel);
+// app.use('/upload',uploadExcelController);
 
 app.listen(port,()=>{
   console.log(`Server is running ....${port}`)

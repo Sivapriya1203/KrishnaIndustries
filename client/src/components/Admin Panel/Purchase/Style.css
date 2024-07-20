@@ -1,0 +1,99 @@
+.add-purchase-form {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .purchase-details, .payment-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .purchase-details div, .payment-details div {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .purchase-details div:last-child, .payment-details div:last-child {
+    margin-right: 0;
+  }
+  
+  .item-table {
+    margin-bottom: 20px;
+  }
+  
+  .item-table table {
+    width: 100px;
+    border-collapse: collapse;
+  }
+  
+  .item-table th, .item-table td {
+    padding: 10px;
+    border: 1px solid #dee2e6;
+  }
+  
+  .item-table th {
+    background-color: #e9ecef;
+  }
+  
+  .item-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .totals {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .totals div {
+    flex: 1;
+    padding: 10px;
+    background-color: #e9ecef;
+    margin-right: 10px;
+    text-align: center;
+  }
+  
+  .totals div:last-child {
+    margin-right: 0;
+  }
+  
+  .submit-button {
+    text-align: right;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .add-item-button {
+    margin-top: 10px;
+  }
+  
+  .payment-details button {
+    margin-top: 10px;
+    background-color: #28a745;
+  }
+  
+  .payment-details button:hover {
+    background-color: #218838;
+  }
+  

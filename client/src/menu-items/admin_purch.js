@@ -23,7 +23,16 @@ const admin_purch = {
       url: '/purchIndex',
       icon: icons.IconTypography,
       breadcrumbs: false
+    },
+    {
+      id: 'admin-purch',
+      title: 'Add Purchase',
+      type: 'item',
+      url: '/addpurchase',
+      icon: icons.IconTypography,
+      breadcrumbs: false
     }
+
   ]
 };
 
