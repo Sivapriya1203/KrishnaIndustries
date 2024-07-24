@@ -5,6 +5,9 @@ import MainLayout from 'layout/MainLayout';
 import Loadable from 'ui-component/Loadable';
 import { element } from 'prop-types';
 import AddPurchaseForm from 'components/Admin Panel/Purchase/AddPurchaseForm';
+import DailywiseAttendance from 'components/Reports/DailywiseAttendance';
+import PurchaseReport from 'components/Reports/purchaseReport';
+import SalesReport from 'components/Reports/SalesReport';
 // import UploadExcel from 'components/Admin Panel/Purchase/UploadExcell';
 
 const Login = Loadable(lazy(() => import('views/pages/authentication3/Login')));
@@ -101,6 +104,18 @@ const MainRoutes = sessionStorage.getItem("adminLoggedIn") ? {
     {
       path: 'custPurchIndex',
       element: <AdminCustPurchIndex />
+    },
+    {
+      path:'reports',
+      element:<DailywiseAttendance/>
+    },
+    {
+      path:'purreports',
+      element:<PurchaseReport/>
+    },
+    {
+      path:'salesreports',
+      element:<SalesReport/>
     },
     {
       path: 'utils',
